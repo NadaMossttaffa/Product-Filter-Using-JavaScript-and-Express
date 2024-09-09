@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="filter.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Our Products</h1>
+        </header>
+        <aside id="search">
+            <div class="filter-group">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="">All</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Books">Books</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="priceMin">Minimum Price</label>
+                <input type="number" id="priceMin" placeholder="0">
+            </div>
+            <div class="filter-group">
+                <label for="priceMax">Maximum Price</label>
+                <input type="number" id="priceMax" placeholder="1000">
+            </div>
+            <div class="filter-group">
+                <label for="brand">Brand</label>
+                <select id="brand">
+                    <option value="">All</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="LCWaiKiki">LCWaiKiki</option>
+                    <option value="Dawen bookstore">Dawen bookstore</option>
+                </select>
+            </div>
+        </aside>
+        <main id="product-list">
+        </main>
+    </div>
+    <script src="filter.js"></script>
+</body>
+</html>
